@@ -4,31 +4,60 @@ body {
   margin: 0 auto;
 }
 header {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  z-index: 1;
   /* background-color: goldenrod; */
 }
 img {
   max-width: 100%;
   width: 100%;
 }
+.yellow{
+  color: yellow;
+}
+.green{
+  color: green;
+}
+.red{
+  color: red;
+}
 .box-wrapper {
   display: flex;
+  /* flex-wrap: wrap; */
   justify-content: space-around;
+  align-items: stretch;
 }
 .box {
   width: 30%;
-  padding: 10px;
+  margin: 10px;
   text-align: center;
   box-sizing: border-box;
+  border: 1px solid #e8a069;
+  box-shadow: 10px 5px 5px #e8a069;
+}
+.box img{
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+
 }
 h1 {
-  font-size: 18px;
-}
-h1 span {
-  font-size: 12px;
+  font-size: 24px;
 }
 h2 {
   font-size: 32px;
   text-align: center;
+}
+.w-10{
+  width: 10%;
+  padding-right: 10px;
+}
+.m-10{
+  margin: 10px;
 }
 .top-img {
   position: relative;
@@ -41,7 +70,17 @@ h2 {
   color: #ffffff;
 }
 .about-country {
-  /* background-color: gold; */
+  margin: 40px 0;
+}
+.about-country img{
+  display: inline;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.about-country p{
+  /* display: flex;
+  justify-content: center; */
 }
 .capital {
 }
@@ -51,6 +90,10 @@ h2 {
 }
 .famous-person {
   /* background-color: red; */
+}
+.famous-person .box{
+  box-shadow: none;
+  border:none;
 }
 .famous-person .img {
   width: 30%;
@@ -63,6 +106,7 @@ h2 {
   /* background-color: skyblue; */
 }
 .famous-group {
+  margin: 40px 0;
   /* background-color: pink; */
 }
 .famous-group .famous-food {
@@ -70,5 +114,5 @@ h2 {
 .famous-group .famous-place {
 }
 .famous-group .box {
-  width: 50%;
+  width: 33.33%;
 }
