@@ -3,13 +3,18 @@ body {
   color: #000;
   margin: 0 auto;
 }
-header {
+#header{
   position: fixed;
   display: flex;
   width: 100%;
   align-items: center;
   z-index: 1;
-  /* background-color: goldenrod; */
+  transition: background-color 0.3s ease;
+  background-color: transparent; /*初期は透明*/
+}
+#header.scrolled{
+  background-color: #e8a069;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 img {
   max-width: 100%;
